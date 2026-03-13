@@ -29,7 +29,7 @@
     display: flex;
     flex-direction: column;
   }
-
+ 
   /* HEADER */
   header {
     display: flex;
@@ -70,7 +70,7 @@
     border-radius: 20px;
     letter-spacing: 0.05em;
   }
-
+ 
   /* MAIN */
   main {
     flex: 1;
@@ -79,7 +79,7 @@
     margin: 0 auto;
     padding: 3rem 2rem 4rem;
   }
-
+ 
   .hero {
     text-align: center;
     margin-bottom: 3rem;
@@ -99,7 +99,7 @@
     margin: 0 auto;
     line-height: 1.7;
   }
-
+ 
   /* SEARCH */
   .search-wrap {
     background: #0a0a0a;
@@ -154,7 +154,7 @@
   .btn-analyze:hover { background: #e8e8e8; }
   .btn-analyze:active { transform: scale(0.98); }
   .btn-analyze:disabled { background: #333; color: #666; cursor: not-allowed; }
-
+ 
   /* API KEY */
   .api-notice {
     background: #0a0a0a;
@@ -206,7 +206,7 @@
     transition: background 0.15s;
   }
   .btn-save:hover { background: #2a2a2a; }
-
+ 
   /* LOADING */
   .loading-wrap {
     display: none;
@@ -236,12 +236,12 @@
   }
   .step-item.active { color: white; border-color: #444; background: #111; }
   .step-item.done { color: #22c55e; border-color: #1a3a1a; background: #0a1a0a; }
-
+ 
   /* REPORT */
   #report { display: none; }
   #report.visible { display: block; animation: fadeUp 0.4s ease; }
   @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
-
+ 
   .report-header {
     display: flex;
     align-items: flex-start;
@@ -259,9 +259,9 @@
     text-align: right;
     line-height: 1.8;
   }
-
+ 
   .divider { height: 0.5px; background: #1a1a1a; margin: 1.5rem 0; }
-
+ 
   /* SECTION */
   .section { margin-bottom: 1.5rem; }
   .section-head {
@@ -289,7 +289,7 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
   }
-
+ 
   /* CARDS */
   .card {
     background: #0a0a0a;
@@ -313,7 +313,7 @@
   }
   .stat-val { font-size: 22px; font-weight: 600; letter-spacing: -0.02em; }
   .stat-lbl { font-size: 11px; color: #555; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.06em; font-family: 'DM Mono', monospace; }
-
+ 
   /* COLORS */
   .color-grid { display: flex; flex-wrap: wrap; gap: 10px; }
   .color-item {
@@ -335,7 +335,7 @@
   .color-info { display: flex; flex-direction: column; }
   .color-role { font-size: 11px; color: #555; }
   .color-hex { font-size: 13px; font-family: 'DM Mono', monospace; color: white; font-weight: 500; }
-
+ 
   /* CONTACTS */
   .contact-item {
     display: flex;
@@ -369,7 +369,7 @@
   }
   .badge-linkedin { background: #0a1a2a; color: #4a9eff; border: 0.5px solid #1a3a5a; }
   .badge-email { background: #0a1a0a; color: #4ade80; border: 0.5px solid #1a3a1a; }
-
+ 
   /* TIPS */
   .tip-item {
     display: flex;
@@ -395,7 +395,7 @@
   .tip-content { flex: 1; }
   .tip-title { font-size: 14px; font-weight: 500; margin-bottom: 3px; }
   .tip-desc { font-size: 13px; color: #666; line-height: 1.6; }
-
+ 
   /* MAIL */
   .mail-box {
     background: #050505;
@@ -444,7 +444,7 @@
   }
   .btn-copy:hover { background: #222; color: white; }
   .btn-copy.copied { color: #4ade80; border-color: #1a3a1a; }
-
+ 
   /* VALUES */
   .values-wrap { display: flex; flex-wrap: wrap; gap: 8px; }
   .value-tag {
@@ -455,7 +455,7 @@
     border: 0.5px solid #222;
     color: #888;
   }
-
+ 
   /* BRAND TYPE */
   .brand-type-badge {
     display: inline-flex;
@@ -469,7 +469,7 @@
     color: #4a9eff;
     font-family: 'DM Mono', monospace;
   }
-
+ 
   /* ERROR */
   .error-box {
     display: none;
@@ -482,7 +482,7 @@
     margin-bottom: 1rem;
   }
   .error-box.visible { display: block; }
-
+ 
   /* FOOTER */
   footer {
     border-top: 0.5px solid #111;
@@ -493,7 +493,7 @@
     font-family: 'DM Mono', monospace;
     letter-spacing: 0.05em;
   }
-
+ 
   @media (max-width: 600px) {
     main { padding: 2rem 1rem 3rem; }
     header { padding: 1rem; }
@@ -502,7 +502,7 @@
 </style>
 </head>
 <body>
-
+ 
 <header>
   <div class="logo-mark">
     <div class="logo-box">
@@ -517,15 +517,15 @@
   </div>
   <div class="header-tag">v1.0 · Personel Kıyafet</div>
 </header>
-
+ 
 <main>
   <div class="hero">
     <h1>Firma kimliğini analiz et,<br/><strong>koleksiyonu tasarla.</strong></h1>
     <p>Hedef firmanın adını yaz. Marka renklerini, karar vericileri, kıyafet önerilerini ve hazır teklif mailini otomatik al.</p>
   </div>
-
-
-
+ 
+ 
+ 
   <!-- SEARCH -->
   <div class="search-wrap">
     <span class="search-label">Hedef firma</span>
@@ -534,10 +534,10 @@
       <button class="btn-analyze" id="analyzeBtn" onclick="analyze()">Analiz Et</button>
     </div>
   </div>
-
+ 
   <!-- ERROR -->
   <div class="error-box" id="errorBox"></div>
-
+ 
   <!-- LOADING -->
   <div class="loading-wrap" id="loadingWrap">
     <div class="spinner"></div>
@@ -550,10 +550,10 @@
       <div class="step-item" id="step5">05 · Teklif maili hazırlanıyor</div>
     </div>
   </div>
-
+ 
   <!-- REPORT -->
   <div id="report">
-
+ 
     <div class="report-header">
       <div>
         <div class="report-title" id="rFirmaAdi">—</div>
@@ -564,9 +564,9 @@
         <div>Şimşek Tekstil · Araştırma</div>
       </div>
     </div>
-
+ 
     <div class="divider"></div>
-
+ 
     <!-- GENEL BİLGİ -->
     <div class="section">
       <div class="section-head">
@@ -583,9 +583,9 @@
         <span style="font-size:13px; color:#aaa;" id="rMerkez">—</span>
       </div>
     </div>
-
+ 
     <div class="divider"></div>
-
+ 
     <!-- MARKA KİMLİĞİ -->
     <div class="section">
       <div class="section-head">
@@ -604,9 +604,9 @@
         </div>
       </div>
     </div>
-
+ 
     <div class="divider"></div>
-
+ 
     <!-- KARAR VERİCİLER -->
     <div class="section">
       <div class="section-head">
@@ -615,9 +615,9 @@
       </div>
       <div class="card" id="rKisiler"></div>
     </div>
-
+ 
     <div class="divider"></div>
-
+ 
     <!-- TASARIM ÖNERİLERİ -->
     <div class="section">
       <div class="section-head">
@@ -626,9 +626,9 @@
       </div>
       <div class="card" id="rTasarim"></div>
     </div>
-
+ 
     <div class="divider"></div>
-
+ 
     <!-- TEKLİF MAİLİ -->
     <div class="section">
       <div class="section-head">
@@ -652,15 +652,15 @@
         </div>
       </div>
     </div>
-
+ 
   </div>
 </main>
-
+ 
 <footer>ŞT · Şimşek Tekstil Marka Araştırma Aracı · Dahili Kullanım</footer>
-
+ 
 <script>
 let apiKey = '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';
-
+ 
 function init() {
   if (apiKey) {
     document.getElementById('apiDot').classList.add('green');
@@ -669,7 +669,7 @@ function init() {
     document.getElementById('apiKeyInput').placeholder = 'sk-ant-api03-••••••••••••';
   }
 }
-
+ 
 function saveApiKey() {
   const val = document.getElementById('apiKeyInput').value.trim();
   if (!val || !val.startsWith('sk-ant')) {
@@ -684,7 +684,7 @@ function saveApiKey() {
   document.getElementById('apiKeyInput').value = '';
   document.getElementById('apiKeyInput').placeholder = 'sk-ant-api03-••••••••••••';
 }
-
+ 
 function setStep(n) {
   for (let i = 1; i <= 5; i++) {
     const el = document.getElementById('step' + i);
@@ -693,17 +693,17 @@ function setStep(n) {
     else { el.className = 'step-item'; }
   }
 }
-
+ 
 async function analyze() {
   const firma = document.getElementById('firmInput').value.trim();
   if (!firma) { showError('Lütfen bir firma adı gir.'); return; }
   if (!apiKey) { showError('Önce API key\'ini kaydet.'); return; }
-
+ 
   hideError();
   document.getElementById('report').classList.remove('visible');
   document.getElementById('loadingWrap').classList.add('active');
   document.getElementById('analyzeBtn').disabled = true;
-
+ 
   setStep(1);
   await delay(600);
   setStep(2);
@@ -713,13 +713,13 @@ async function analyze() {
   setStep(4);
   await delay(400);
   setStep(5);
-
+ 
   const prompt = `Sen Türkiye'deki "${firma}" firmasını araştıran bir marka analisti ve tekstil danışmanısın.
   
 Şimşek Tekstil adına, bu firmaya personel kıyafeti satmak için kapsamlı bir araştırma yap.
-
+ 
 Aşağıdaki JSON formatında cevap ver. SADECE JSON döndür, başka hiçbir şey yazma:
-
+ 
 {
   "firma_adi": "Firmanın tam resmi adı",
   "sektor": "Firmanın sektörü (örn: Kozmetik & Kişisel Bakım Perakende)",
@@ -752,7 +752,7 @@ Aşağıdaki JSON formatında cevap ver. SADECE JSON döndür, başka hiçbir ş
   "mail_alici": "Hangi unvana gönderilmeli",
   "mail_icerik": "Tamamen profesyonel, ikna edici, kişiselleştirilmiş bir teklif maili. Firma adını, marka renklerini ve kimliğini incelediğimizi belli et. 4-5 paragraf. Şimşek Tekstil adına yazılmış gibi."
 }`;
-
+ 
   try {
     const res = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
@@ -768,17 +768,17 @@ Aşağıdaki JSON formatında cevap ver. SADECE JSON döndür, başka hiçbir ş
         messages: [{ role: 'user', content: prompt }]
       })
     });
-
+ 
     if (!res.ok) {
       const err = await res.json();
       throw new Error(err.error?.message || 'API hatası: ' + res.status);
     }
-
+ 
     const data = await res.json();
     let text = data.content[0].text.trim();
     text = text.replace(/```json|```/g, '').trim();
     const d = JSON.parse(text);
-
+ 
     renderReport(d, firma);
   } catch (e) {
     document.getElementById('loadingWrap').classList.remove('active');
@@ -786,18 +786,18 @@ Aşağıdaki JSON formatında cevap ver. SADECE JSON döndür, başka hiçbir ş
     showError('Hata: ' + e.message);
   }
 }
-
+ 
 function renderReport(d, firma) {
   document.getElementById('loadingWrap').classList.remove('active');
   document.getElementById('analyzeBtn').disabled = false;
-
+ 
   document.getElementById('rFirmaAdi').textContent = d.firma_adi || firma;
   document.getElementById('rSektor').textContent = d.sektor || '—';
   document.getElementById('rTarih').textContent = new Date().toLocaleDateString('tr-TR', { day:'numeric', month:'long', year:'numeric' });
   document.getElementById('rFirmaTipi').textContent = d.firma_tipi || '—';
   document.getElementById('rKurulus').textContent = d.kurulus_yili || '—';
   document.getElementById('rMerkez').textContent = d.genel_merkez || '—';
-
+ 
   // Stats
   const stats = [
     { val: d.magaza_sayisi || '—', lbl: 'Mağaza / Şube' },
@@ -807,7 +807,7 @@ function renderReport(d, firma) {
   document.getElementById('rStatGrid').innerHTML = stats.map(s =>
     `<div class="stat-box"><div class="stat-val">${s.val}</div><div class="stat-lbl">${s.lbl}</div></div>`
   ).join('');
-
+ 
   // Renkler
   document.getElementById('rRenkler').innerHTML = (d.marka_renkleri || []).map(r =>
     `<div class="color-item">
@@ -818,12 +818,12 @@ function renderReport(d, firma) {
       </div>
     </div>`
   ).join('');
-
+ 
   // Değerler
   document.getElementById('rDegerler').innerHTML = (d.marka_degerleri || []).map(v =>
     `<span class="value-tag">${v}</span>`
   ).join('');
-
+ 
   // Kişiler
   document.getElementById('rKisiler').innerHTML = (d.karar_vericiler || []).map(k => {
     const initials = k.unvan.split(' ').slice(0,2).map(w => w[0]).join('').toUpperCase();
@@ -841,7 +841,7 @@ function renderReport(d, firma) {
       ${badge}
     </div>`;
   }).join('');
-
+ 
   // Tasarım
   document.getElementById('rTasarim').innerHTML = (d.tasarim_onerileri || []).map((t, i) =>
     `<div class="tip-item">
@@ -852,16 +852,16 @@ function renderReport(d, firma) {
       </div>
     </div>`
   ).join('');
-
+ 
   // Mail
   document.getElementById('rMailKonu').textContent = d.mail_konu || '—';
   document.getElementById('rMailAlici').textContent = d.mail_alici || '—';
   document.getElementById('rMailBody').textContent = d.mail_icerik || '—';
-
+ 
   document.getElementById('report').classList.add('visible');
   document.getElementById('report').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
-
+ 
 function copyMail() {
   const text = document.getElementById('rMailBody').textContent;
   navigator.clipboard.writeText(text).then(() => {
@@ -871,7 +871,7 @@ function copyMail() {
     setTimeout(() => { btn.textContent = 'Kopyala'; btn.classList.remove('copied'); }, 2000);
   });
 }
-
+ 
 function showError(msg) {
   const el = document.getElementById('errorBox');
   el.textContent = msg;
@@ -881,7 +881,7 @@ function hideError() {
   document.getElementById('errorBox').classList.remove('visible');
 }
 function delay(ms) { return new Promise(r => setTimeout(r, ms)); }
-
+ 
 init();
 </script>
 </body>
